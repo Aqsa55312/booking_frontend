@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useQuery, useMutation } from '@apollo/client';
-import { GET_ROOMS } from '../../../graphql/queries';
-import { CREATE_ROOM, UPDATE_ROOM, DELETE_ROOM } from '../../../graphql/mutations';
+import { GET_ROOMS } from '../../graphql/queries';
+import { CREATE_ROOM, UPDATE_ROOM, DELETE_ROOM } from '../../graphql/mutations';
 import { Plus, Edit, Trash2, X, Save, Building2, MapPin, Users, DollarSign } from 'lucide-react';
 
 export default function ManageRooms() {

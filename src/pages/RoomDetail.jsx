@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useQuery, useMutation } from '@apollo/client';
-import { GET_ROOM_BY_ID } from '../../graphql/queries';
-import { CREATE_BOOKING } from '../../graphql/mutations';
+import { GET_ROOM_BY_ID } from '../graphql/queries';
+import { CREATE_BOOKING } from '../graphql/mutations';
 import { Calendar, Users, MapPin, Clock, CheckCircle, ArrowLeft } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
 

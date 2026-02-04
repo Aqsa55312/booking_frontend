@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useQuery } from '@apollo/client';
 import { useNavigate } from 'react-router-dom';
-import { GET_ROOMS } from '../../graphql/queries';
+import { GET_ROOMS } from '../graphql/queries';
 import { Calendar, Users, MapPin, Search, Filter, Grid, List } from 'lucide-react';
 
 export default function Rooms() {

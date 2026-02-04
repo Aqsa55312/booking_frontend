@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useQuery, useMutation } from '@apollo/client';
-import { GET_ALL_BOOKINGS } from '../../../graphql/queries';
-import { APPROVE_BOOKING, REJECT_BOOKING, DELETE_BOOKING } from '../../../graphql/mutations';
+import { GET_ALL_BOOKINGS } from '../../graphql/queries';
+import { APPROVE_BOOKING, REJECT_BOOKING, DELETE_BOOKING } from '../../graphql/mutations';
 import { Calendar, Users, MapPin, Check, X, Trash2, Eye } from 'lucide-react';
 
 export default function ManageBookings() {
