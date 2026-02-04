@@ -5,6 +5,7 @@ import { GET_DASHBOARD_STATS } from '../graphql/queries';
 import Rooms from './Rooms';
 import RoomDetail from './RoomDetail';
 import MyBookings from './MyBookings';
+import RoomsDemo from './RoomsDemo';
 
 const Dashboard = () => {
   const { user, logout } = useAuth();
@@ -46,6 +47,7 @@ const Dashboard = () => {
       <Routes>
         <Route path="/" element={<DashboardHome user={user} />} />
         <Route path="/rooms" element={<Rooms />} />
+        <Route path="/rooms-demo" element={<RoomsDemo />} />
         <Route path="/rooms/:id" element={<RoomDetail />} />
         <Route path="/my-bookings" element={<MyBookings />} />
       </Routes>
@@ -96,14 +98,23 @@ const DashboardHome = ({ user }) => {
 
           <div className="mt-8 bg-white p-6 rounded-xl shadow">
             <h3 className="text-xl font-semibold mb-4">Quick Actions</h3>
-            <div className="grid md:grid-cols-2 gap-4">
+            <div className="grid md:grid-cols-3 gap-4">
               <Link
                 to="/dashboard/rooms"
                 className="p-4 border-2 border-indigo-200 rounded-lg hover:border-indigo-600 hover:bg-indigo-50 transition"
               >
                 <div className="text-2xl mb-2">🏢</div>
                 <h4 className="font-semibold">Lihat Ruangan</h4>
-                <p className="text-sm text-gray-600">Browse ruangan yang tersedia</p>
+                <p className="text-sm text-gray-600">Browse ruangan (Backend required)</p>
+              </Link>
+
+              <Link
+                to="/dashboard/rooms-demo"
+                className="p-4 border-2 border-yellow-200 bg-yellow-50 rounded-lg hover:border-yellow-600 hover:bg-yellow-100 transition"
+              >
+                <div className="text-2xl mb-2">🎨</div>
+                <h4 className="font-semibold">Demo Mode</h4>
+                <p className="text-sm text-gray-600">Preview dengan mock data</p>
               </Link>
               
               <Link
