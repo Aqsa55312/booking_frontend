@@ -4,7 +4,7 @@ import { useQuery, useMutation } from '@apollo/client';
 import { GET_ROOM_BY_ID } from '../graphql/queries';
 import { CREATE_BOOKING } from '../graphql/mutations';
 import { Calendar, Users, MapPin, Clock, CheckCircle, ArrowLeft } from 'lucide-react';
-import { useAuth } from '../../context/AuthContext';
+import { useAuth } from '../context/AuthContext';
 
 export default function RoomDetail() {
   const { id } = useParams();

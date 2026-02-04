@@ -151,25 +151,6 @@ const AdminHome = () => {
           </div>
         </>
       )}
-          <Link
-            to="/admin/rooms"
-            className="p-4 border-2 border-indigo-200 rounded-lg hover:border-indigo-600 hover:bg-indigo-50 transition"
-          >
-            <div className="text-2xl mb-2">🏢</div>
-            <h4 className="font-semibold">Manage Rooms</h4>
-            <p className="text-sm text-gray-600">Add, edit, or remove rooms</p>
-          </Link>
-          
-          <Link
-            to="/admin/bookings"
-            className="p-4 border-2 border-indigo-200 rounded-lg hover:border-indigo-600 hover:bg-indigo-50 transition"
-          >
-            <div className="text-2xl mb-2">📋</div>
-            <h4 className="font-semibold">Approve Bookings</h4>
-            <p className="text-sm text-gray-600">Review and approve bookings</p>
-          </Link>
-        </div>
-      </div>
     </div>
   );
 };

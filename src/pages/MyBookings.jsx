@@ -3,7 +3,7 @@ import { useQuery, useMutation } from '@apollo/client';
 import { GET_MY_BOOKINGS } from '../graphql/queries';
 import { DELETE_BOOKING, CANCEL_BOOKING } from '../graphql/mutations';
 import { Calendar, Clock, Users, MapPin, Edit, Trash2, X } from 'lucide-react';
-import EditBookingModal from '../../components/EditBookingModal';
+import EditBookingModal from '../components/EditBookingModal';
 
 export default function MyBookings() {
   const [statusFilter, setStatusFilter] = useState('ALL');
